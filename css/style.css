@@ -20,7 +20,7 @@ body {
   line-height: 1.4;
   letter-spacing: 0;
   max-width: 100%;
-  color: #122864;
+  color: white;
 
   background-image: url('../img/bg.jpg');
   background-size: 100% auto;
@@ -209,7 +209,7 @@ button {
   position: fixed;
   top: 50%;
   right: 0;
-  width: 20%;
+  width: 50%;
   color: white;
   background-color: #00235d;
   z-index: 10;
@@ -256,11 +256,11 @@ button {
 
 @media (max-width: 1023.98px) {
   .header .container {
-    max-width: 90%;
+    max-width: 97%;
   }
   
   .header img {
-    width: 18.6vw;
+    width: 17.6vw;
   }
 }
 
@@ -268,15 +268,16 @@ button {
 ================================================== */
 .new-products {
   text-align: center;
+  margin-top: -1vw;
 }
 
 .new-products h1 {
   font-size: 4.8vw;
   line-height: 1;
-  margin-bottom: 1.3vw;
+  margin-bottom: 2vw;
+  color: #00235d;
 }
 
-/* Desktop Img */
 .new-products .img {
   display: flex;
   align-items: center;
@@ -284,54 +285,7 @@ button {
 }
 
 .new-products .img img {
-  width: 57%;
-}
-
-/* Mobile Img */
-.new-products .icv__control {
-  justify-content: flex-start;
-}
-
-.new-products .icv__control::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 15.6vw;
-  height: 15.6vw;
-  border-radius: 50%;
-  background-color: #0f1b51;
-  transform: translate(-50%, -50%);
-}
-
-.new-products .icv__control-line {
-  background: #0f1b51!important;
-}
-
-.new-products .icv__control-line:last-child {
-  height: 46%;
-}
-
-.new-products .icv__arrow-wrapper {
-  transform: none!important;
-  width: 3.46vw;
-  height: 4.93vw;
-  background-image: url('../img/arrow-right-white.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.new-products .icv__arrow-wrapper svg {
-  display: none;
-}
-
-.new-products .icv__arrow-wrapper:last-of-type {
-  transform: rotate(180deg)!important;
-}
-
-.new-products .icv__theme-wrapper {
-  width: 11vw;
+  width: 62.3%;
 }
 
 @media (max-width: 1023.98px) {
@@ -343,12 +297,16 @@ button {
     font-size: 14.1vw;
     margin-bottom: 5.3vw;
   }
+
+  .new-products .img img {
+    width: 100%;
+  }
 }
 
 /* #Contact
 ================================================== */
 .contact {
-  padding: 7.5vw 0;
+  padding: 1.5vw 0 5.2vw 0;
 }
 
 .contact .container {
@@ -359,6 +317,7 @@ button {
   text-align: center;
   font-size: 2.6vw;
   margin-bottom: 2.3vw;
+  line-height: 1;
 }
 
 .contact .form-group {
@@ -410,18 +369,18 @@ button {
 }
 
 .contact button {
-  font-size: 2.75vw;
+  font-size: 2.34vw;
   border: none;
   background-color: #34913a;
   color: white;
   padding: .25vw 2.8vw .75vw 2.8vw;
   border-radius: 1.5vw;
-  margin-top: 2.6vw;
+  margin-top: 2.34vw;
 }
 
 @media (max-width: 1023.98px) {
   .contact {
-    padding: 8vw 0;
+    padding: 13.33vw 0 8vw 0;
   }
   
   .contact .container {
@@ -430,7 +389,7 @@ button {
   
   .contact h2 {
     font-size: 5.33vw;
-    margin-bottom: 2.3vw;
+    margin-bottom: 5.33vw;
   }
   
   .contact .form-group {
@@ -451,10 +410,10 @@ button {
   }
 
   .contact button {
-    font-size: 5.86vw;
+    font-size: 4.93vw;
     padding: 1vw 6vw 2vw 6vw;
     border-radius: 4vw;
-    margin-top: 2.6vw;
+    margin-top: 3.6vw;
   }
 
   .contact input[type="text"],
@@ -489,7 +448,7 @@ button {
 
 .products .swiper-container {
   max-width: 40vw;
-  padding: 4vw 0;
+  padding: 2vw 0 4vw 0;
 }
 
 .products .swiper-slide {
@@ -502,19 +461,11 @@ button {
   width: 18.2vw;
 }
 
-.products .bg-img {
-  width: 90%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(-45%);
-}
-
 .products .swiper-button-next, 
 .products .swiper-button-prev {
   width: 2.6vw;
   height: 3.9vw;
-  background-image: url('../img/arrow-left.png');
+  background-image: url('../img/arrow-left-white.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -531,7 +482,7 @@ button {
 
 @media (max-width: 1023.98px) {
   .products {
-    padding-top: 5vw;
+    padding-top: 2vw;
   }
 
   .products .container {
@@ -544,7 +495,7 @@ button {
 
   .products .swiper-container {
     max-width: 100%;
-    padding: 8vw 0;
+    padding: 4vw 0 8vw 0;
   }
 
   .products .swiper-button-next, 
@@ -553,8 +504,8 @@ button {
     height: 5.45vw;
   }
 
-  .products .bg-img {
-    width: 100%;
+  .products .swiper-slide img {
+    width: 46.66vw;
   }
 }
 
@@ -562,7 +513,7 @@ button {
 ================================================== */
 .video {
   text-align: center;
-  padding: 3vw 0;
+  padding: 0 0 5.5vw 0;
 }
 
 .video .container {
@@ -591,7 +542,7 @@ button {
 @media (max-width: 1023.98px) {
   .video {
     text-align: center;
-    padding: 8vw 0;
+    padding: 0 0 8vw 0;
   }
   
   .video .container {
@@ -600,6 +551,6 @@ button {
   
   .video h2 {
     font-size: 5.33vw;
-    margin-bottom: 3vw;
+    margin-bottom: 4vw;
   }
 }
